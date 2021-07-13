@@ -16,7 +16,7 @@ console.log(temp.textContent)
 
         /*Translation layer*/
         const fetchSelectedLocation = (value)=>{
-            let locations = { lr: "https://climate-api.zohar-hadari.com:3000/get/livingrooms%20-l", os: "httpsOS"}
+            let locations = { lr: "https://climate-api.zohar-hadari.com:3000/get/livingrooms%20-l", os: "https://climate-api.zohar-hadari.com:3000/zones/outsides%20-l"}
             console.log('fetch', value);
             console.log(value);
             console.log(locations.value);
