@@ -11,6 +11,12 @@ var requestOptions = {
   };
   
 
+  fetch("https://climate-api.zohar-hadari.com:3000/get/livingrooms%20-l", requestOptions)
+    .then(response => response.text())
+    .then(result => console.log(result))
+    .catch(error => console.log('error', error));
+
+
 
   fetch("http://192.168.8.248:3001/get/livingrooms%20-l", requestOptions)
     .then(response => response.text())
