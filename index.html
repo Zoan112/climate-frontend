@@ -11,16 +11,26 @@
     <title>Climate API</title>
 </head>
 <body>
+    <div class="bg-color"></div>
+    <div class="bg-image"></div>
     <h1>Climate API</h1>
 
-
+    <div class="container">
+<div>
+    <p>Sensor location:</p>
     <select name="location" id="location" onchange="locationSelection(value)" >
         <option value="lr">Living Room</option>
         <option value="os">Outside</option>
     </select>
+</div>
 
-<span class="dash"><p class="temp">PlaceHolder</p> <p>°C</p></span>
-<span class="dash"><p class="humidity">PlaceHolder</p> <p>%H</p></span>
+    <div class="data">
+        <span class="dash"><p class="temp">PlaceHolder</p> <p>°</p></span>
+        <span class="dash"><p class="humidity">PlaceHolder</p> <p>%</p></span>
+    </div>
+</div>
+</div>
+
 
 <script src="appp.js"></script>
 </body>

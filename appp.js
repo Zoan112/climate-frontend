@@ -7,13 +7,13 @@ console.log(temp.textContent)
 /* Fetch from API server*/
 
 
-
 /*Get location selection from DOM*/
         const locationSelection = ((value)=>{
             console.log(value);
             fetchSelectedLocation(value)
         })
-
+ 
+        
         /*Translation layer*/
         const fetchSelectedLocation = (value)=>{
             let locations = { lr: "https://climate-api.zohar-hadari.com:3000/get/livingrooms%20-l", os: "https://climate-api.zohar-hadari.com:3000/zones/outsides%20-l"}
@@ -26,10 +26,10 @@ console.log(temp.textContent)
             fetchFuntion(apiCall);
           //  console.log(Object.values(locations))
         }
-
+       
         /*fetch results*/
 
-        fetchFuntion = (apiCall)=>{
+      const  fetchFuntion = (apiCall)=>{
             var requestOptions = {
                 method: 'GET',
                 redirect: 'follow'
@@ -43,8 +43,9 @@ console.log(temp.textContent)
             
 
         }
-      
-
+      /*Defult location reading*/
+        locationSelection('lr');
+        
 /*Update DOM*/
     update =((result)=>{
         show = JSON.parse(result);
