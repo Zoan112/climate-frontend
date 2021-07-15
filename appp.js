@@ -2,6 +2,7 @@ console.log("js started");
 
 const temp = document.getElementsByClassName("temp")[0];
 const humidity = document.getElementsByClassName("humidity")[0];
+const lastReadingData = document.getElementsByClassName("lastReadingData")[0];
 
 console.log(temp.textContent)
 /* Fetch from API server*/
@@ -51,6 +52,7 @@ console.log(temp.textContent)
       console.log(result);
         show = JSON.parse(result);
         result.json
+        lastReadingData.textContent = show[0].time;
         temp.textContent = show[0].C;
         humidity.textContent = show[0].H;
         console.log(temp.textContent);
